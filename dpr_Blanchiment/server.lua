@@ -18,8 +18,6 @@ AddEventHandler('dpr_Blanchiment:Blanchir', function(thune)
 		TriggerClientEvent('esx:showAdvancedNotification', _src, 'Blanchiment', 'Information', "J'te blanchit sa mec attend un peu !", 'CHAR_ARTHUR', 1)
         Citizen.Wait(10000)
         TriggerClientEvent('esx:showAdvancedNotification', _src, 'Blanchiment', 'Information', "Tien mon gars voila t'as thune: "..Total.."$ !", 'CHAR_ARTHUR', 1)
-        end
-
         xPlayer.addMoney(Total)
     else
         Citizen.Wait(500)
